@@ -12,7 +12,7 @@ LinkedIn: [linkedin.com/in/chintak-joshi-882260115/](https://www.linkedin.com/in
 **Saint Louis University** • US, MO, Saint Louis • 2024
 
 ### BE in Information Technology
-**University of Mumbai** • 2022
+**Gujarat Technological University** • 2022
 
 ## Skills
 
