@@ -3,8 +3,7 @@
 
 Location: St. Louis, Missouri, United States  
 Email: [chintakmanojkumar.joshi@slu.edu](mailto:chintakmanojkumar.joshi@slu.edu)  
-Phone: +1 (314)- 600- 3874
-LinkedIn: [linkedin.com/in/chintak-joshi-882260115/](https://www.linkedin.com/in/chintak-joshi-882260115/)
+Phone: +1 (314)- 600- 3874LinkedIn: [linkedin.com/in/chintak-joshi-882260115/](https://www.linkedin.com/in/chintak-joshi-882260115/)
 
 ## Education
 
