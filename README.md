@@ -1,18 +1,16 @@
-
 # Chintak Joshi
 
-Location: St. Louis, Missouri, United States  
-Email: [chintakmanojkumar.joshi@slu.edu](mailto:chintakmanojkumar.joshi@slu.edu)  
-Phone: +1 (314)- 600- 3874
+Location: Saint Louis, Missouri, United States  
+Email: [chintakmanojkumar.joshi@slu.edu](mailto:chintakmanojkumar.joshi@slu.edu)
 LinkedIn: [linkedin.com/in/chintak-joshi-882260115/](https://www.linkedin.com/in/chintak-joshi-882260115/)
 
 ## Education
 
 ### Master's in Computer Science
-**Saint Louis University** • US, MO, Saint Louis • 2024
+**Saint Louis University** • Saint Louis, Missouri • 2024
 
 ### BE in Information Technology
-**Gujarat Technological University** • 2022
+**Gujarat Technological University** • Ahmedabad, Gujarat • 2022
 
 ## Skills
 
@@ -24,6 +22,7 @@ LinkedIn: [linkedin.com/in/chintak-joshi-882260115/](https://www.linkedin.com/in
 ## Experience
 
 ### Graduate Assistant
-* Working as a Tech Lead for open-source projects, Organizing Scrum Meetings and problem-solving sessions.
+* Actively contributing to open-source projects.
+* Working as a software dev for open-source projects, Organizing Scrum Meetings and problem-solving sessions.
 * Building Software from Scratch while learning new technologies.
 * Ensuring Quality and following Scrum Principles.
