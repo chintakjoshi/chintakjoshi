@@ -2,7 +2,7 @@
 
 Location: Saint Louis, Missouri, United States  
 Email: [chintakmanojkumar.joshi@slu.edu](mailto:chintakmanojkumar.joshi@slu.edu)
-LinkedIn: [linkedin.com/in/chintak-joshi-882260115/](https://www.linkedin.com/in/chintak-joshi-882260115/)
+LinkedIn: [linkedin. com/in/chintak-joshi-882260115/](https://www.linkedin.com/in/chintak-joshi-882260115/)
 
 ## Education
 
