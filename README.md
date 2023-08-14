@@ -1,4 +1,4 @@
-# Chintak Joshi
+# About me
 
 Location: Saint Louis, Missouri, United States  
 * [Email](mailto:chintakmanojkumar.joshi@slu.edu)
