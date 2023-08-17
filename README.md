@@ -21,8 +21,3 @@ Location: Saint Louis, Missouri, United States
 
 ## Experience
 
-### Graduate Assistant
-* Actively contributing to open-source projects.
-* Working as a software dev for open-source projects, Organizing Scrum Meetings and problem-solving sessions.
-* Building Software from Scratch while learning new technologies.
-* Ensuring Quality and following Scrum Principles.
