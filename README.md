@@ -20,7 +20,6 @@ Location: Saint Louis, Missouri, United States
 * Leveraged Agile Scrum methodologies to enhance team productivity and efficiency in software delivery.
 * Designed and developed diverse APIs, including RESTful, microservices, and GraphQL.
 * Conducted comprehensive regression testing and code reviews, ensuring high software quality and adherence to best practices.
-
 ###Software Engineering Intern | Anudip Foundation | India
 * Constructed end-to-end web-based solutions that facilitate data processing, analysis, and graphical representation. 
 * Orchestrated critical updates in a timely manner, encompassing alterations in content and enhancements in the database structure.
