@@ -14,7 +14,7 @@ Location: Saint Louis, Missouri, United States
 ## Professional Experience
 ### Software Engineer I | Open-Source at SLU | Saint Louis University, MO
 * Architected and deployed robust authentication and authorization mechanisms for an LMS application, leveraging OAuth2, HMAC,and JWT. Implemented deep linking capabilities in compliance with LTI 1.3 standards.
-* Implemented featuresss that increased user interaction by 30%, enhancing overall engagement and user satisfaction.
+* Implemented features that increased user interaction by 30%, enhancing overall engagement and user satisfaction.
 
 ### Software Engineering Intern | Brainybeam Technologies Pvt. Ltd. | India
 * Leveraged Agile Scrum methodologies to enhance team productivity and efficiency in software delivery.
