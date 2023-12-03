@@ -26,7 +26,7 @@ Location: Saint Louis, Missouri, United States
 * Orchestrated critical updates in a timely manner, encompassing alterations in content and enhancements in the database structure.
 * Ensured high-quality software delivery through rigorous testing and refinement of web-based applications.
 
-### Software Engineering Intern | Brainybeam Technologies Pvt. Ltd. | India
+### Software Engineering Intern | Bainybeam Technologies Pvt. Ltd. | India
 * Employed the Django framework to tailor a dynamic user interface, ensuring seamless usability and exceptional software delivery. 
 * Designed and implemented robust APIs to enable seamless integration with various systems. 
 * Streamlined and optimized existing websites utilizing cutting-edge front-end web development techniques within advanced content management systems.
