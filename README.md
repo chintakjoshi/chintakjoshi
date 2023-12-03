@@ -33,7 +33,7 @@ Location: Saint Louis, Missouri, United States
 
 ## Education
 ### Master's in Computer Science
-**Saint Louis University** • Saint Louis, Missouri • Expected - 2024
+**Saint Louis University** • Saint Louis, Missouri • Expected (2024)
 
 ### BE in Information Technology
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
