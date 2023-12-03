@@ -12,9 +12,9 @@ Location: Saint Louis, Missouri, United States
 * IDE & Tools: VScode, Pycharm, Eclipse, NetBeans, Postman, Firebase, Linux, Tableau
 
 ## Professional Experience
-### Software Developer I | Open-Source at SLU | Saint Louis University, MO
-* Spearheaded the development and optimization of open-source projects, ensuring robustness and scalability for the university's technological framework.
-* Enhanced community engagement, establishing the university as a leader in open-source development.
+### Software Engineer I | Open-Source at SLU | Saint Louis University, MO
+* Architected and deployed robust authentication and authorization mechanisms for an LMS application, leveraging OAuth2, HMAC,and JWT. Implemented deep linking capabilities in compliance with LTI 1.3 standards.
+* Implemented features that increased user interaction by 30%, enhancing overall engagement and user satisfaction.
 
 ### Software Engineering Intern | Brainybeam Technologies Pvt. Ltd. | India
 * Leveraged Agile Scrum methodologies to enhance team productivity and efficiency in software delivery.
