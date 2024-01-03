@@ -63,20 +63,14 @@ Location: Saint Louis, Missouri, United States
 ---
 <div align="center">
  <!-- contribuições/commits/etc  --> 
-<a href="https://github.com/chintakjoshi/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi" />
-</a>
-<a href="https://github.com/chintakjoshi">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=chintakjoshi&layout=compact&langs_count=8&card_width=320" />
-</a>
+ <a href="https://github.com/chintakjoshi" >
+      <img height="200em" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi&show_icons=true&theme=transparent&include_all_commits=true&text_color=ffffff&title_color=1E90FF&icon_color=708090&custom_title=Chintak%20Joshi'%20Github%20Stats&card_width=400&bg_color=000000&border_color=1E90FF"/>
+ </a>
  
   <!-- contador de linguagem  --> 
-<a href="https://github.com/chintakjoshi/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=chintakjoshi&repo=github-readme-stats" />
-</a>
 <a href="https://github.com/chintakjoshi">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=chintakjoshi" />
-</a>
+    <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chintakjoshi&langs_count=10&theme=transparent&text_color=ffffff&card_width=400&layout=compact&title_color=1E90FF&bg_color=000000&border_color=1E90FF"/>
+</a> 
 <!--&border_color=1E90FF-->
 </div>
 
@@ -85,5 +79,5 @@ Location: Saint Louis, Missouri, United States
 <div align="center">
  <img src="./assets/luffy.gif" width="20%" loop autoplay>
  
-<img src="https://komarev.com/ghpvc/?username=ms-daniel&&style=flat-square" />
+<img src="https://komarev.com/ghpvc/?username=chintakjoshi&&style=flat-square" />
 </div>
