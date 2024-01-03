@@ -63,14 +63,20 @@ Location: Saint Louis, Missouri, United States
 ---
 <div align="center">
  <!-- contribuições/commits/etc  --> 
- <a href="https://github.com/chintakjoshi" >
-      <img height="200em" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi&show_icons=true&theme=tokyonight"/>
- </a>
+<a href="https://github.com/chintakjoshi/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi" />
+</a>
+<a href="https://github.com/chintakjoshi/convoychat">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=chintakjoshi&layout=compact&langs_count=8&card_width=320" />
+</a>
  
   <!-- contador de linguagem  --> 
-<a href="https://github.com/ms-daniel">
-    <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ms-daniel&langs_count=10&theme=transparent&text_color=ffffff&card_width=400&layout=compact&title_color=1E90FF&bg_color=000000&border_color=1E90FF"/>
-</a> 
+<a href="https://github.com/chintakjoshi/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=chintakjoshi&repo=github-readme-stats" />
+</a>
+<a href="https://github.com/chintakjoshi/convoychat">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=chintakjoshi&repo=convoychat" />
+</a>
 <!--&border_color=1E90FF-->
 </div>
 
