@@ -1,5 +1,3 @@
-<img src="./assets/banner1.gif" align="middle" alt="Banner" width="100%"/>
-
 ## About me
 Embarking on a digital quest at Saint Louis University, I am honing my skills in the mystical arts of Computer Science. My ultimate dream is to join a league of innovative developers, contributing my full-stack wizardry and problem-solving acumen to a distinguished organization. Armed with a passion for technology and a knack for tackling complex challenges, I am excited to explore new horizons and weave magic in future roles.
 
