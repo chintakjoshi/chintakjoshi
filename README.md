@@ -1,12 +1,11 @@
 <img src="./assets/banner.gif" align="middle" alt="Banner" width="100%"/>
 
 # About me
-
 Location: Saint Louis, Missouri, United States  
 * [Email](mailto:chintakmanojkumar.joshi@slu.edu)
 * [LinkedIn](https://www.linkedin.com/in/chintak-joshi-882260115/)
 ---
-<img src="./assets/deploycat.gif" align="right" alt="coding image" height="20%" width="33%">
+<img src="./assets/coding.gif" align="right" alt="coding image" height="30%" width="33%">
 
 ## Technical Skills
 * Languages: JavaScript, TypeScript, Python, Java, XML/HTML, CSS, SQL
@@ -43,3 +42,42 @@ Location: Saint Louis, Missouri, United States
 
 ### BE in Information Technology
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
+
+## Contact
+
+<div id="contacts">
+ <a href="mailto:chintakjoshi17@gmail.com" target="_blank" alt="whatsapp to contact">
+  <img  src="./assets/email.png" alt="email to contact" width="5%">
+ </a>
+ <a href="https://wa.me/qr/GSP43QHXUGT7C1" target="_blank" alt="whatsapp to contact">
+  <img src="./assets/whatsapp.png"  width="5%">
+ </a>
+ 
+ <a href="https://www.instagram.com/chintak_joshi" target="_blank" alt="instagram to contact">
+  <img  src="./assets/instagram.png"  width="5%">
+ </a>
+</div>
+
+---
+
+---
+<div align="center">
+ <!-- contribuições/commits/etc  --> 
+ <a href="https://github.com/chintakjoshi" >
+      <img height="200em" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi&show_icons=true&theme=transparent&include_all_commits=true&text_color=ffffff&title_color=1E90FF&icon_color=708090&custom_title=Carlos%20Daniel'%20Github%20Stats&card_width=400&bg_color=000000&border_color=1E90FF"/>
+ </a>
+ 
+  <!-- contador de linguagem  --> 
+<a href="https://github.com/chintakjoshi">
+    <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chintakjoshi&langs_count=10&theme=transparent&text_color=ffffff&card_width=400&layout=compact&title_color=1E90FF&bg_color=000000&border_color=1E90FF"/>
+</a> 
+<!--&border_color=1E90FF-->
+</div>
+
+ ---
+
+<div align="center">
+ <img src="./assets/luffy.gif" width="20%" loop autoplay>
+ 
+<img src="https://komarev.com/ghpvc/?username=chintakjoshi&&style=flat-square" />
+</div>
