@@ -44,4 +44,4 @@ Location: Saint Louis, Missouri, United States
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
 
 ---
-<img src="./assets/education.gif.gif" align="right" alt="coding image" height="30%" width="33%">
+<img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
