@@ -49,10 +49,9 @@ Location: Saint Louis, Missouri, United States
  <a href="mailto:chintakjoshi17@gmail.com" target="_blank" alt="whatsapp to contact">
   <img  src="./assets/email.png" alt="email to contact" width="5%">
  </a>
- <a href="https://wa.me/qr/GSP43QHXUGT7C1" target="_blank" alt="whatsapp to contact">
-  <img src="./assets/whatsapp.png"  width="5%">
+  <a href="https://www.linkedin.com/in/chintak-joshi-882260115/" target="_blank" alt="LinkedIn to contact">
+  <img  src="./assets/linkedin.png"  width="5%">
  </a>
- 
  <a href="https://www.instagram.com/chintak_joshi" target="_blank" alt="instagram to contact">
   <img  src="./assets/instagram.png"  width="5%">
  </a>
@@ -60,7 +59,6 @@ Location: Saint Louis, Missouri, United States
 
 ---
 
----
 <div align="center">
  <!-- contribuições/commits/etc  --> 
  <a href="https://github.com/chintakjoshi" >
