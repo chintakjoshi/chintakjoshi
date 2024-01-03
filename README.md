@@ -1,3 +1,5 @@
+<img src="./assets/penguin.gif" align="middle" alt="Banner" width="100%"/>
+
 # About me
 
 Location: Saint Louis, Missouri, United States  
