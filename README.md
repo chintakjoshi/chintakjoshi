@@ -64,7 +64,7 @@ Location: Saint Louis, Missouri, United States
 <div align="center">
  <!-- contribuições/commits/etc  --> 
  <a href="https://github.com/chintakjoshi" >
-      <img height="200em" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi&show_icons=true&theme=transparent&include_all_commits=true&text_color=ffffff&title_color=1E90FF&icon_color=708090&custom_title=Chintak%20Joshi'%20Github%20Stats&card_width=400&bg_color=000000&border_color=1E90FF"/>
+      <img height="200em" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi&show_icons=true&theme=transparent"/>
  </a>
  
   <!-- contador de linguagem  --> 
