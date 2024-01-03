@@ -1,12 +1,11 @@
 <img src="./assets/banner.gif" align="middle" alt="Banner" width="100%"/>
 
 # About me
-Location: Saint Louis, Missouri, United States  
-* [Email](mailto:chintakmanojkumar.joshi@slu.edu)
-* [LinkedIn](https://www.linkedin.com/in/chintak-joshi-882260115/)
+Embarking on a digital quest at Saint Louis University, I am honing my skills in the mystical arts of Computer Science. My ultimate dream is to join a league of innovative developers, contributing my full-stack wizardry and problem-solving acumen to a distinguished organization. Armed with a passion for technology and a knack for tackling complex challenges, I am excited to explore new horizons and weave magic in future roles.
 
 ---
 <img src="./assets/coding.gif" align="right" alt="coding image" height="30%" width="33%">
+
 ## Technical Skills
 
 * Languages: JavaScript, TypeScript, Python, Java, XML/HTML, CSS, SQL
@@ -18,7 +17,7 @@ Location: Saint Louis, Missouri, United States
 ---
 
 ## Professional Experience
-### Software Engineer I | Open-Source at SLU | Saint Louis University, MO
+### Full Stack Software Engineer | Open-Source at SLU | Saint Louis University, MO
 * Architected and deployed robust authentication and authorization mechanisms for an LMS application, leveraging OAuth2, HMAC,and JWT. Implemented deep linking capabilities in compliance with LTI 1.3 standards.
 * Implemented features that increased user interaction by 30%, enhancing overall engagement and user satisfaction.
 
