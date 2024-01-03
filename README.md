@@ -5,7 +5,6 @@
 Location: Saint Louis, Missouri, United States  
 * [Email](mailto:chintakmanojkumar.joshi@slu.edu)
 * [LinkedIn](https://www.linkedin.com/in/chintak-joshi-882260115/)
-
 ---
 <img src="./assets/deploycat.gif" align="right" alt="coding image" height="30%" width="33%">
 
@@ -42,5 +41,4 @@ Location: Saint Louis, Missouri, United States
 
 ### BE in Information Technology
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
-
 <img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
