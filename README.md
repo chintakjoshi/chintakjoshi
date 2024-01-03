@@ -4,12 +4,11 @@
 Location: Saint Louis, Missouri, United States  
 * [Email](mailto:chintakmanojkumar.joshi@slu.edu)
 * [LinkedIn](https://www.linkedin.com/in/chintak-joshi-882260115/)
----
-<img src="./assets/coding.gif" align="right" alt="coding image" height="30%" width="33%">
 
 ---
 
 ## Technical Skills
+<img src="./assets/coding.gif" align="right" alt="coding image" height="30%" width="33%">
 * Languages: JavaScript, TypeScript, Python, Java, XML/HTML, CSS, SQL
 * Frameworks: React, Native, Redux, Node.js, Angular.js, Express.js, Django, Bootstrap, Tailwind CSS
 * Databases: MySQL, MongoDB, Oracle, PL/SQL
