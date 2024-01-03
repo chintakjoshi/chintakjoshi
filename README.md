@@ -36,9 +36,10 @@ Location: Saint Louis, Missouri, United States
 * Streamlined and optimized existing websites utilizing cutting-edge front-end web development techniques within advanced content management systems.
 
 ## Education
+<img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
+
 ### Master's in Computer Science
 **Saint Louis University** • Saint Louis, Missouri • Expected (2024)
 
 ### BE in Information Technology
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
-<img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
