@@ -4,8 +4,9 @@ Location: Saint Louis, Missouri, United States
 * [Email](mailto:chintakmanojkumar.joshi@slu.edu)
 * [LinkedIn](https://www.linkedin.com/in/chintak-joshi-882260115/)
 
-![GIF](<iframe src="https://giphy.com/embed/MQnmKbh8A9n9kT4Ua5" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/CleverCodeLab-fire-work-crazy-MQnmKbh8A9n9kT4Ua5">via GIPHY</a></p>)
+![GIF](https://giphy.com/embed/MQnmKbh8A9n9kT4Ua5)
 
+![Alt text](image link)
 ## Technical Skills
 * Languages: JavaScript, TypeScript, Python, Java, XML/HTML, CSS, SQL
 * Frameworks: React, Native, Redux, Node.js, Angular.js, Express.js, Django, Bootstrap, Tailwind CSS
