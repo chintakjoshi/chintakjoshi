@@ -7,12 +7,16 @@ Location: Saint Louis, Missouri, United States
 ---
 <img src="./assets/coding.gif" align="right" alt="coding image" height="30%" width="33%">
 
+---
+
 ## Technical Skills
 * Languages: JavaScript, TypeScript, Python, Java, XML/HTML, CSS, SQL
 * Frameworks: React, Native, Redux, Node.js, Angular.js, Express.js, Django, Bootstrap, Tailwind CSS
 * Databases: MySQL, MongoDB, Oracle, PL/SQL
 * DevOps & Cloud Services: AWS, Azure, Docker, GitHub, CircleCI, Jira, Slack, Docker
 * IDE & Tools: VScode, Pycharm, Eclipse, NetBeans, Postman, Firebase, Linux, Tableau
+
+---
 
 ## Professional Experience
 ### Software Engineer I | Open-Source at SLU | Saint Louis University, MO
@@ -34,6 +38,8 @@ Location: Saint Louis, Missouri, United States
 * Designed and implemented robust APIs to enable seamless integration with various systems. 
 * Streamlined and optimized existing websites utilizing cutting-edge front-end web development techniques within advanced content management systems.
 
+---
+
 ## Education
 <img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
 
@@ -43,8 +49,9 @@ Location: Saint Louis, Missouri, United States
 ### BE in Information Technology
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
 
-## Contact
+---
 
+## Contact
 <div id="contacts">
  <a href="mailto:chintakjoshi17@gmail.com" target="_blank" alt="whatsapp to contact">
   <img  src="./assets/email.png" alt="email to contact" width="5%">
