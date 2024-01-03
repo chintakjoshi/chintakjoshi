@@ -43,5 +43,4 @@ Location: Saint Louis, Missouri, United States
 ### BE in Information Technology
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
 
----
 <img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
