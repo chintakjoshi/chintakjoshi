@@ -66,7 +66,7 @@ Location: Saint Louis, Missouri, United States
 <a href="https://github.com/chintakjoshi/github-readme-stats">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=chintakjoshi" />
 </a>
-<a href="https://github.com/chintakjoshi/convoychat">
+<a href="https://github.com/chintakjoshi">
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=chintakjoshi&layout=compact&langs_count=8&card_width=320" />
 </a>
  
@@ -74,8 +74,8 @@ Location: Saint Louis, Missouri, United States
 <a href="https://github.com/chintakjoshi/github-readme-stats">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=chintakjoshi&repo=github-readme-stats" />
 </a>
-<a href="https://github.com/chintakjoshi/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=chintakjoshi&repo=convoychat" />
+<a href="https://github.com/chintakjoshi">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=chintakjoshi" />
 </a>
 <!--&border_color=1E90FF-->
 </div>
