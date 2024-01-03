@@ -1,4 +1,4 @@
-<img src="./assets/penguin.gif" align="middle" alt="Banner" width="100%"/>
+<img src="./assets/banner.gif" align="middle" alt="Banner" width="100%"/>
 
 # About me
 
@@ -42,3 +42,6 @@ Location: Saint Louis, Missouri, United States
 
 ### BE in Information Technology
 **Gujarat Technological University** • Ahmedabad, Gujarat • 2022
+
+---
+<img src="./assets/education.gif.gif" align="right" alt="coding image" height="30%" width="33%">
