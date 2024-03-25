@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chintakjoshi/static/css/main.176b99b4.css",
+    "main.js": "/chintakjoshi/static/js/main.3be5592b.js",
+    "static/js/787.bc590a12.chunk.js": "/chintakjoshi/static/js/787.bc590a12.chunk.js",
+    "static/media/twa.jpg": "/chintakjoshi/static/media/twa.04b757db982ffad4aa04.jpg",
+    "static/media/qr.jpg": "/chintakjoshi/static/media/qr.41b7161d9e7fd24f3196.jpg",
+    "static/media/slustore.jpg": "/chintakjoshi/static/media/slustore.fe660e6fb0f568a9e94b.jpg",
+    "static/media/ispraak.jpg": "/chintakjoshi/static/media/ispraak.7867c1785154050b1aef.jpg",
+    "static/media/webdev.svg": "/chintakjoshi/static/media/webdev.4d72dbba32efee3890cef9bcacce7aa7.svg",
+    "static/media/cloudBg.png": "/chintakjoshi/static/media/cloudBg.f28b5c6961fd82be839c.png",
+    "static/media/cloudDark.png": "/chintakjoshi/static/media/cloudDark.51edaa54cabe7b964ae9.png",
+    "index.html": "/chintakjoshi/index.html",
+    "main.176b99b4.css.map": "/chintakjoshi/static/css/main.176b99b4.css.map",
+    "main.3be5592b.js.map": "/chintakjoshi/static/js/main.3be5592b.js.map",
+    "787.bc590a12.chunk.js.map": "/chintakjoshi/static/js/787.bc590a12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.176b99b4.css",
+    "static/js/main.3be5592b.js"
+  ]
+}
