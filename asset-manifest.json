@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chintakjoshi/static/css/main.d0b5e0d2.css",
+    "main.css": "/chintakjoshi/static/css/main.b0d6274e.css",
     "main.js": "/chintakjoshi/static/js/main.2fcb5569.js",
     "static/js/787.bc590a12.chunk.js": "/chintakjoshi/static/js/787.bc590a12.chunk.js",
     "static/media/twa.jpg": "/chintakjoshi/static/media/twa.04b757db982ffad4aa04.jpg",
@@ -11,12 +11,12 @@
     "static/media/cloudBg.png": "/chintakjoshi/static/media/cloudBg.f28b5c6961fd82be839c.png",
     "static/media/cloudDark.png": "/chintakjoshi/static/media/cloudDark.51edaa54cabe7b964ae9.png",
     "index.html": "/chintakjoshi/index.html",
-    "main.d0b5e0d2.css.map": "/chintakjoshi/static/css/main.d0b5e0d2.css.map",
+    "main.b0d6274e.css.map": "/chintakjoshi/static/css/main.b0d6274e.css.map",
     "main.2fcb5569.js.map": "/chintakjoshi/static/js/main.2fcb5569.js.map",
     "787.bc590a12.chunk.js.map": "/chintakjoshi/static/js/787.bc590a12.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0b5e0d2.css",
+    "static/css/main.b0d6274e.css",
     "static/js/main.2fcb5569.js"
   ]
 }
