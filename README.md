@@ -16,7 +16,7 @@ Embarking on a digital quest at Saint Louis University, I am honing my skills in
 
 ## Professional Experience
 ### Full Stack Software Engineer | Saint Louis University, MO
-* Architected and deployed robust authentication and authorization mechanisms for an LMS application, leveraging OAuth2, HMAC,and JWT. Implemented deep linking capabilities in compliance with LTI 1.3 standards.
+* Architected and deployed robust authentication and authorization mechanisms for an LMS application, leveraging OAuth2, HMAC, and JWT. Implemented deep linking capabilities in compliance with LTI 1.3 standards.
 * Implemented features that increased user interaction by 30%, enhancing overall engagement and user satisfaction.
 
 ### Software Engineering Intern | Brainybeam Technologies Pvt. Ltd. | India
