@@ -46,10 +46,10 @@ Embarking on a digital quest at Saint Louis University, I am honing my skills in
 ## Education
 <img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
 
-### Master's in Computer Science
+### M.Sc.
 **Saint Louis University** • Missouri, USA • 2024
 
-### BE in Information Technology
+### B.E in Information Technology
 **Gujarat Technological University** • Gujarat, India • 2022
 
 ---
