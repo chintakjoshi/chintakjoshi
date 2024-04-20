@@ -26,17 +26,17 @@ Embarking on a digital quest at Saint Louis University, I am honing my skills in
 * Initiated and enforced a code review process that improved code quality by 40% and facilitated knowledge sharing withintheteam.
 * Streamlined application performance by 25% through comprehensive analysis and optimization of the code base and infrastructure.
 
-### Software Engineering Intern | Brainybeam Technologies Pvt. Ltd. | India
+### Software Engineering Intern | Brainybeam Technologies Pvt. Ltd.
 * Contributed to a 10% improvement in application performance by optimizing existing C#, Java, and Python code.
 * Played a key role in reducing software release cycles by 20% through automation of testing and deployment processes.
 * Assisted in developing a critical feature that enhanced product functionality, leading to a 15% increase in customer satisfaction.
 * Supported the resolution of over 100 bugs and issues, enhancing application stability and user experience.
 
-### Software Engineering Intern | Anudip Foundation | India
+### Software Engineering Intern | Anudip Foundation
 * Participated in the development of a high-performance computing application, improving processing speed by 35%usingoptimizedC++ algorithms.
 * Collaborated on a project that resulted in a 25% improvement in application scalability and a 20% reduction in memoryusage
 
-### Software Engineering Intern | Bainybeam Technologies Pvt. Ltd. | India
+### Software Engineering Intern | Bainybeam Technologies Pvt. Ltd.
 * Supported the development of an innovative software solution, leading to a 20% improvement in operational efficiencyfor theclient.
 * Engaged in software development lifecycle practices, contributing to a 30% acceleration in development velocity throughagilemethodologies.
 * Enhanced application performance by 35% through the implementation of efficient data structures and algorithms.
