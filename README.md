@@ -6,44 +6,51 @@ Embarking on a digital quest at Saint Louis University, I am honing my skills in
 
 ## Technical Skills
 
-* Languages: Java, JavaScript, TypeScript, PHP, Python
-* Frameworks: React, Native, Redux, Node.js, Angular.js, Express.js, Django, Bootstrap, Tailwind CSS
-* Databases: MySQL, MongoDB, Oracle, PL/SQL
-* DevOps & Cloud Services: AWS, Azure, Docker, GitHub, CircleCI, Jira, Slack, Docker
-* IDE & Tools: VScode, Pycharm, Eclipse, NetBeans, Postman, Firebase, Linux, Tableau
+* Languages: C++, C#, Java, JavaScript, TypeScript, Python, Go
+* Frameworks: React, Angular, Node.js, Next.js, Springboot, Django, ASP.NET Core
+* Databases: MySQL, MongoDB, PL/PgSQL, CockroachDB, DynamoDB
+* DevOps & Cloud Services: AWS, Azure, GCP, Firebase, Docker, Git, Jenkins, CircleCI, Jira
 
 ---
 
 ## Professional Experience
-### Full Stack Software Engineer | Saint Louis University, MO
-* Architected and deployed robust authentication and authorization mechanisms for an LMS application, leveraging OAuth2, HMAC, and JWT. Implemented deep linking capabilities in compliance with LTI 1.3 standards.
-* Implemented features that increased user interaction by 30%, enhancing overall engagement and user satisfaction.
+### Full Stack Software Engineer | Saint Louis University
+* Solely developed and deployed scalable web applications, enhancing user engagement by 40% through intuitive interfacedesign.
+* Reduced server response times by 30% and improved application efficiency through optimized back-end algorithms.
+* Implemented RESTful APIs, increasing application functionality and external service integration by 25%.
+* Achieved a 20% reduction in load times by optimizing database queries and implementing caching mechanisms.
+
+### Technical Team Lead | Saint Louis University
+* Led a development team in delivering multiple web application projects on schedule, improving project delivery efficiencyby15%.
+* Mentored undergraduate students, resulting in a 50% improvement in coding standards and a 30% reduction in post-deploymentbugs.
+* Initiated and enforced a code review process that improved code quality by 40% and facilitated knowledge sharing withintheteam.
+* Streamlined application performance by 25% through comprehensive analysis and optimization of the code base and infrastructure.
 
 ### Software Engineering Intern | Brainybeam Technologies Pvt. Ltd. | India
-* Leveraged Agile Scrum methodologies to enhance team productivity and efficiency in software delivery.
-* Designed and developed diverse APIs, including RESTful, microservices, and GraphQL.
-* Conducted comprehensive regression testing and code reviews, ensuring high software quality and adherence to best practices.
+* Contributed to a 10% improvement in application performance by optimizing existing C#, Java, and Python code.
+* Played a key role in reducing software release cycles by 20% through automation of testing and deployment processes.
+* Assisted in developing a critical feature that enhanced product functionality, leading to a 15% increase in customer satisfaction.
+* Supported the resolution of over 100 bugs and issues, enhancing application stability and user experience.
 
 ### Software Engineering Intern | Anudip Foundation | India
-* Constructed end-to-end web-based solutions that facilitate data processing, analysis, and graphical representation. 
-* Orchestrated critical updates in a timely manner, encompassing alterations in content and enhancements in the database structure.
-* Ensured high-quality software delivery through rigorous testing and refinement of web-based applications.
+* Participated in the development of a high-performance computing application, improving processing speed by 35%usingoptimizedC++ algorithms.
+* Collaborated on a project that resulted in a 25% improvement in application scalability and a 20% reduction in memoryusage
 
 ### Software Engineering Intern | Bainybeam Technologies Pvt. Ltd. | India
-* Employed the Django framework to tailor a dynamic user interface, ensuring seamless usability and exceptional software delivery. 
-* Designed and implemented robust APIs to enable seamless integration with various systems. 
-* Streamlined and optimized existing websites utilizing cutting-edge front-end web development techniques within advanced content management systems.
-
+* Supported the development of an innovative software solution, leading to a 20% improvement in operational efficiencyfor theclient.
+* Engaged in software development lifecycle practices, contributing to a 30% acceleration in development velocity throughagilemethodologies.
+* Enhanced application performance by 35% through the implementation of efficient data structures and algorithms.
+* Participated in the documentation and testing of new features, resulting in a 40% decrease in user-reported issues post-launch.
 ---
 
 ## Education
 <img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
 
 ### Master's in Computer Science
-**Saint Louis University** • Saint Louis, Missouri • Expected (2024)
+**Saint Louis University** • Missouri, USA • 2024
 
 ### BE in Information Technology
-**Gujarat Technological University** • Ahmedabad, Gujarat • 2022
+**Gujarat Technological University** • Gujarat, India • 2022
 
 ---
 
@@ -52,7 +59,7 @@ Embarking on a digital quest at Saint Louis University, I am honing my skills in
  <a href="mailto:chintakjoshi17@gmail.com" target="_blank" alt="whatsapp to contact">
   <img  src="./assets/email.png" alt="email to contact" width="5%">
  </a>
-  <a href="https://www.linkedin.com/in/chintak-joshi-882260115/" target="_blank" alt="LinkedIn to contact">
+  <a href="https://www.linkedin.com/in/chintakjoshi/" target="_blank" alt="LinkedIn to contact">
   <img  src="./assets/linkedin.png"  width="5%">
  </a>
  <a href="https://www.instagram.com/chintak_joshi" target="_blank" alt="instagram to contact">
