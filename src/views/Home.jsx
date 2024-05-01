@@ -34,11 +34,11 @@ const Home = () => {
                 <Typical
                   steps={[
                     "Full-Stack SDE",
-                    1000,
+                    1300,
                     "Front-End SDE",
-                    1000,
+                    1300,
                     "Mobile Developer",
-                    1000,
+                    1300,
                   ]}
                   loop={Infinity}
                 />
