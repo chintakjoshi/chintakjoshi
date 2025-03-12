@@ -15,21 +15,22 @@ Embarking on a digital quest at Saint Louis University, I am honing my skills in
 
 ## Professional Experience
 
-### Full Stack Software Engineer | Saint Louis University
-### Technical Team Lead | Saint Louis University
-### Software Engineer | Mastercard
-### Software Engineering Intern | Bainybeam Technologies Pvt. Ltd.
-### Software Engineering Intern | Anudip Foundation
+* Software Engineer 3 | Singlewire Software, LLC
+* Software Engineer 2 | Saint Louis University
+* Lead Software Engineer (contract) | Saint Louis University
+* Associate Software Engineer | Mastercard
+* Software Engineering Intern | Bainybeam Technologies Pvt. Ltd.
+* Software Engineering Intern | Anudip Foundation
 ---
 
 ## Education
 <img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
 
 ### M.Sc.
-**Saint Louis University** • Missouri, USA • 2024
+**Saint Louis University** • Missouri, USA
 
 ### B.E in Information Technology
-**Gujarat Technological University** • Gujarat, India • 2022
+**Gujarat Technological University** • Gujarat, India
 
 ---
 
