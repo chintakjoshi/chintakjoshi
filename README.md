@@ -13,16 +13,6 @@ Embarking on a digital quest at Saint Louis University, I am honing my skills in
 
 ---
 
-## Professional Experience
-
-* Software Engineer 3 at Singlewire Software, LLC
-* Software Engineer 2 at Saint Louis University
-* Lead Software Engineer (contract) at Saint Louis University
-* Associate Software Engineer at Mastercard
-* Software Engineering Intern at Bainybeam Technologies Pvt. Ltd.
-* Software Engineering Intern at Anudip Foundation
----
-
 ## Education
 <img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
 
