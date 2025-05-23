@@ -10,7 +10,7 @@ const Services = () => {
       className={
         theme.state.darkMode ? "pb-20 bg-fixed bg-gray-100" : "pb-20 bg-black"
       }
-      // style={{backgroundImage: `url('https://i.pinimg.com/originals/b0/b1/f5/b0b1f5d33de00e3c21ad29bbba25e31b.gif')`}}>
+    // style={{backgroundImage: `url('https://i.pinimg.com/originals/b0/b1/f5/b0b1f5d33de00e3c21ad29bbba25e31b.gif')`}}>
     >
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 px-4 pt-20"
@@ -26,9 +26,6 @@ const Services = () => {
           Services
         </h2>
         <div className="">
-          <h4 className="mt-16 text-3xl font-semibold text-blue-500">
-            What I Provide
-          </h4>
           <div className="mt-8 flex md:flex-row justify-between flex-col md:items-stretch items-center ">
             {serviceData.map((el) => (
               <motion.div

@@ -26,14 +26,28 @@ const Card1 = () => {
           </h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        iSpraak was made to automate speech evaluation of language learners and to provide them with instantaneous corrective feedback. 
+          iSpraak was made to automate speech evaluation of language learners and to provide them with instantaneous corrective feedback.
         </p>
-        <a
-          href="https://github.com/dnickol1/ispraak_open/"
-          class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
-        >
-          Github
-        </a>
+        <div class="flex space-x-4">
+          <a
+            href="https://ispraak.net"
+            class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
+          >
+            Live
+          </a>
+          <a
+            href="https://dev.ispraak.net/eit/landing.php"
+            class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
+          >
+            Live Multi-auto EIT
+          </a>
+          <a
+            href="https://github.com/dnickol1/ispraak_open/"
+            class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
+          >
+            Github
+          </a>
+        </div>
       </div>
     </motion.div>
   );
