@@ -30,14 +30,9 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              A distinguished Full Stack Software Engineer currently enhancing software solutions at a prestigious university.
-              With an extensive background in software development and team leadership, this professional excels in optimizing
-              application performance and user engagement. Expertise encompasses a wide range of technologies, including advanced
-              programming languages, modern frameworks, and cloud services. Demonstrating a strong commitment to professional growth
-              has effectively led teams to higher standards of efficiency and quality. Innovative projects highlight skills in creating
-              secure and scalable applications, while the status as a Microsoft Certified AI Engineer reflects a dedication to staying
-              at the forefront of technology advancements. Pursuing a Master's in Computer Science, combines practical experience with
-              academic knowledge to drive technological innovation and operational improvement.
+              My passion is to simplify complex challenges and optimize processes, both in my work and everyday life.
+              I thrive in collaborative environments, always encouraging innovative thinking to enhance outcomes.
+              My mission is to streamline solutions, improve processes, and make a positive impact wherever I go.
             </p>
           </motion.div>
           <motion.div
