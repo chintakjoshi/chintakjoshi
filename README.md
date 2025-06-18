@@ -1,18 +1,3 @@
-## Contact
-<div id="contacts">
- <a href="mailto:chintakjoshi17@gmail.com" target="_blank" alt="whatsapp to contact">
-  <img  src="./assets/email.png" alt="email to contact" width="5%">
- </a>
-  <a href="https://www.linkedin.com/in/chintakjoshi/" target="_blank" alt="LinkedIn to contact">
-  <img  src="./assets/linkedin.png"  width="5%">
- </a>
- <a href="https://www.instagram.com/chintak_joshi" target="_blank" alt="instagram to contact">
-  <img  src="./assets/instagram.png"  width="5%">
- </a>
-</div>
-
----
-
 <div align="center">
  <!-- contribuições/commits/etc  --> 
  <a href="https://github.com/chintakjoshi" >
