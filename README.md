@@ -1,29 +1,3 @@
-## About me
-Embarking on a digital quest at Saint Louis University, I am honing my skills in the mystical arts of Computer Science. My ultimate dream is to join a league of innovative developers, contributing my full-stack wizardry and problem-solving acumen to a distinguished organization. Armed with a passion for technology and a knack for tackling complex challenges, I am excited to explore new horizons and weave magic in future roles.
-
----
-<img src="./assets/coding.gif" align="right" alt="coding image" height="30%" width="33%">
-
-## Technical Skills
-
-* Languages: C++, C#, Java, JavaScript, TypeScript, Python, Go
-* Frameworks: React, Angular, Node.js, Next.js, Springboot, Django, ASP.NET Core
-* Databases: MySQL, MongoDB, PL/PgSQL, CockroachDB, DynamoDB
-* DevOps & Cloud Services: AWS, Azure, GCP, Firebase, Docker, Git, Jenkins, CircleCI, Jira
-
----
-
-## Education
-<img src="./assets/education.gif" align="right" alt="coding image" height="30%" width="33%">
-
-### M.Sc.
-**Saint Louis University** • Missouri, USA
-
-### B.E in Information Technology
-**Gujarat Technological University** • Gujarat, India
-
----
-
 ## Contact
 <div id="contacts">
  <a href="mailto:chintakjoshi17@gmail.com" target="_blank" alt="whatsapp to contact">
