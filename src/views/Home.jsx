@@ -51,7 +51,7 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am currently working at Singlewire Software as a Software Engineer III.
+              I am currently working at United Rentals as a Full Stack Software Engineer.
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
