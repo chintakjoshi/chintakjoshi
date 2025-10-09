@@ -7,6 +7,7 @@ import Services from "./views/Services";
 import Projects from "./views/Projects";
 import LoadingScreen from "./components/LoadingScreen";
 import { ThemeProvider } from "./themeProvider";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -26,6 +27,7 @@ function App() {
             <Services />
             <Projects />
             <Contact />
+            <Chatbot />
           </div>
 
         ) : (
