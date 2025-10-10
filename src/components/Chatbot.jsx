@@ -32,6 +32,17 @@ const Chatbot = () => {
     }
   }, [isOpen, messages.length]);
 
+  // Get authentication token
+  const getAuthToken = async () => {
+    try {
+      const token = await CHATBOT_CONFIG.getValidToken();
+      return token;
+    } catch (error) {
+      console.error('Failed to get auth token:', error);
+      return null;
+    }
+  };
+
   const handleSendMessage = async (e) => {
     e.preventDefault();
     if (!inputMessage.trim()) return;
@@ -49,7 +60,7 @@ const Chatbot = () => {
   
     try {
       // Get authentication token
-      const token = await CHATBOT_CONFIG.getValidToken();
+      const token = await getAuthToken();
       
       if (!token) {
         throw new Error('Failed to authenticate with the server');
@@ -108,17 +119,6 @@ const Chatbot = () => {
       setMessages(prev => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
-    }
-  };
-
-  const getAuthToken = async () => {
-    try {
-      // Use the config
-      const token = await CHATBOT_CONFIG.getValidToken();
-      return token;
-    } catch (error) {
-      console.error('Failed to get auth token:', error);
-      return null;
     }
   };
 
