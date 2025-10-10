@@ -34,35 +34,3 @@ code {
   background-color: white;
   border-radius: 40px;
 }
-
-.chatbot-message strong {
-  font-weight: 600;
-  color: inherit;
-}
-
-.chatbot-message em {
-  font-style: italic;
-}
-
-.chatbot-message br {
-  display: block;
-  content: "";
-  margin-top: 0.5rem;
-}
-
-.chatbot-message a {
-  color: #2563eb;
-  text-decoration: underline;
-}
-
-.chatbot-message a:hover {
-  text-decoration: none;
-}
-
-.dark .chatbot-message a {
-  color: #60a5fa;
-}
-
-.dark .chatbot-message a:hover {
-  color: #93c5fd;
-}

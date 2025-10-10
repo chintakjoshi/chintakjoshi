@@ -47,7 +47,12 @@ const Chatbot = () => {
     if (!text) return '';
 
     let formattedText = text
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 underline hover:no-underline">$1</a>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, linkText, url) => {
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="chatbot-link">${linkText}</a>`;
+      })
+      .replace(/(?<!href=")(https?:\/\/[^\s<"]+)(?!">)/g, (match) => {
+        return `<a href="${match}" target="_blank" rel="noopener noreferrer" class="chatbot-link">${match}</a>`;
+      })
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.*?)\*/g, '<em>$1</em>')
       .replace(/\n/g, '<br/>')
@@ -55,7 +60,6 @@ const Chatbot = () => {
       .replace(/^(\d+)\. (.*?)(?=\n|$)/gm, '$1. $2<br/>')
       .replace(/<br\/><br\/>/g, '<br/><br/>')
       .replace(/(<br\/>){3,}/g, '<br/><br/>');
-
     return formattedText;
   };
 
@@ -81,8 +85,6 @@ const Chatbot = () => {
       if (!token) {
         throw new Error('Failed to authenticate with the server');
       }
-
-      console.log('Sending message to:', `${CHATBOT_CONFIG.API_URL}/chat`);
 
       const response = await fetch(`${CHATBOT_CONFIG.API_URL}/chat`, {
         method: 'POST',
@@ -110,7 +112,6 @@ const Chatbot = () => {
       }
 
       const data = await response.json();
-      console.log('Chat response:', data);
 
       if (!sessionId && data.session_id) {
         setSessionId(data.session_id);
@@ -275,19 +276,32 @@ const Chatbot = () => {
 
       {/* Add some basic CSS for the formatted messages */}
       <style jsx>{`
-        .chatbot-message strong {
-          font-weight: 600;
-          color: inherit;
-        }
-        .chatbot-message em {
-          font-style: italic;
-        }
-        .chatbot-message br {
-          display: block;
-          content: "";
-          margin-top: 0.5rem;
-        }
-      `}</style>
+  .chatbot-message strong {
+    font-weight: 600;
+    color: inherit;
+  }
+  .chatbot-message em {
+    font-style: italic;
+  }
+  .chatbot-message br {
+    display: block;
+    content: "";
+    margin-top: 0.5rem;
+  }
+  .chatbot-link {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  .chatbot-link:hover {
+    text-decoration: none;
+  }
+  :global(.dark) .chatbot-link {
+    color: #60a5fa;
+  }
+  :global(.dark) .chatbot-link:hover {
+    color: #93c5fd;
+  }
+`}</style>
     </div>
   );
 };
