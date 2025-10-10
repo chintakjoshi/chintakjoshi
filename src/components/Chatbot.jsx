@@ -43,31 +43,47 @@ const Chatbot = () => {
     }
   };
 
+  const formatBotMessage = (text) => {
+    if (!text) return '';
+
+    let formattedText = text
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 underline hover:no-underline">$1</a>')
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/\n/g, '<br/>')
+      .replace(/^- (.*?)(?=\n|$)/gm, '• $1<br/>')
+      .replace(/^(\d+)\. (.*?)(?=\n|$)/gm, '$1. $2<br/>')
+      .replace(/<br\/><br\/>/g, '<br/><br/>')
+      .replace(/(<br\/>){3,}/g, '<br/><br/>');
+
+    return formattedText;
+  };
+
   const handleSendMessage = async (e) => {
     e.preventDefault();
     if (!inputMessage.trim()) return;
-  
+
     const userMessage = {
       id: messages.length + 1,
       text: inputMessage,
       sender: 'user',
       timestamp: new Date().toLocaleTimeString()
     };
-  
+
     setMessages(prev => [...prev, userMessage]);
     setInputMessage('');
     setIsLoading(true);
-  
+
     try {
       // Get authentication token
       const token = await getAuthToken();
-      
+
       if (!token) {
         throw new Error('Failed to authenticate with the server');
       }
-  
+
       console.log('Sending message to:', `${CHATBOT_CONFIG.API_URL}/chat`);
-      
+
       const response = await fetch(`${CHATBOT_CONFIG.API_URL}/chat`, {
         method: 'POST',
         headers: {
@@ -79,7 +95,7 @@ const Chatbot = () => {
           session_id: sessionId
         })
       });
-  
+
       // Check if response is JSON
       const contentType = response.headers.get("content-type");
       if (!contentType || !contentType.includes("application/json")) {
@@ -87,26 +103,26 @@ const Chatbot = () => {
         console.error('Non-JSON response:', text.substring(0, 200));
         throw new Error(`Server returned non-JSON response: ${response.status} ${response.statusText}`);
       }
-  
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error || `HTTP error! status: ${response.status}`);
       }
-  
+
       const data = await response.json();
       console.log('Chat response:', data);
-      
+
       if (!sessionId && data.session_id) {
         setSessionId(data.session_id);
       }
-  
+
       const botMessage = {
         id: messages.length + 2,
         text: data.response,
         sender: 'bot',
         timestamp: new Date().toLocaleTimeString()
       };
-  
+
       setMessages(prev => [...prev, botMessage]);
     } catch (error) {
       console.error('Chat error details:', error);
@@ -143,17 +159,17 @@ const Chatbot = () => {
           className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 flex items-center justify-center"
           style={{ width: '60px', height: '60px' }}
         >
-          <svg 
-            className="w-6 h-6" 
-            fill="none" 
-            stroke="currentColor" 
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" 
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
             />
           </svg>
         </button>
@@ -197,16 +213,21 @@ const Chatbot = () => {
                 className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-xs sm:max-w-sm px-4 py-2 rounded-2xl ${
-                    message.sender === 'user'
-                      ? 'bg-blue-600 text-white rounded-br-none'
-                      : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded-bl-none'
-                  }`}
+                  className={`max-w-xs sm:max-w-md px-4 py-2 rounded-2xl ${message.sender === 'user'
+                    ? 'bg-blue-600 text-white rounded-br-none'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded-bl-none'
+                    }`}
                 >
-                  <p className="text-sm">{message.text}</p>
-                  <p className={`text-xs mt-1 ${
-                    message.sender === 'user' ? 'text-blue-200' : 'text-gray-500'
-                  }`}>
+                  {message.sender === 'bot' ? (
+                    <div
+                      className="text-sm chatbot-message"
+                      dangerouslySetInnerHTML={{ __html: formatBotMessage(message.text) }}
+                    />
+                  ) : (
+                    <p className="text-sm whitespace-pre-wrap">{message.text}</p>
+                  )}
+                  <p className={`text-xs mt-1 ${message.sender === 'user' ? 'text-blue-200' : 'text-gray-500'
+                    }`}>
                     {message.timestamp}
                   </p>
                 </div>
@@ -251,6 +272,22 @@ const Chatbot = () => {
           </form>
         </div>
       )}
+
+      {/* Add some basic CSS for the formatted messages */}
+      <style jsx>{`
+        .chatbot-message strong {
+          font-weight: 600;
+          color: inherit;
+        }
+        .chatbot-message em {
+          font-style: italic;
+        }
+        .chatbot-message br {
+          display: block;
+          content: "";
+          margin-top: 0.5rem;
+        }
+      `}</style>
     </div>
   );
 };
