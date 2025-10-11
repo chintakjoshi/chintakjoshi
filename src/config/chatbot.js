@@ -1,6 +1,6 @@
 export const CHATBOT_CONFIG = {
   // Make sure this matches your running backend
-  API_URL: process.env.REACT_APP_CHATBOT_API_URL || 'http://localhost:8080/api/v1',
+  API_URL: process.env.REACT_APP_CHATBOT_API_URL,
 
   // Simple authentication
   getAuthToken: async () => {
