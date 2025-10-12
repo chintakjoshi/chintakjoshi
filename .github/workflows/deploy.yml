@@ -30,6 +30,9 @@ jobs:
         run: npm install --force
 
       - name: Build the app
+        env:
+          REACT_APP_CHATBOT_API_URL: ${{ secrets.REACT_APP_CHATBOT_API_URL }}
+          REACT_APP_CHATBOT_API_KEY: ${{ secrets.REACT_APP_CHATBOT_API_KEY }}
         run: npm run build
 
       - name: Upload artifact
