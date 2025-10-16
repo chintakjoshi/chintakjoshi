@@ -277,7 +277,7 @@ const Chatbot = () => {
       )}
 
       {/* Add some basic CSS for the formatted messages */}
-      <style jsx>{`
+      <style>{`
   .chatbot-message strong {
     font-weight: 600;
     color: inherit;
