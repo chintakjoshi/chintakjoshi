@@ -24,7 +24,7 @@ const Chatbot = () => {
       setMessages([
         {
           id: 1,
-          text: "Hi! I'm Chintak's AI assistant. You can ask me about Chintak's experience, projects, skills, or anything else about him!",
+          text: "Hi! I'm Chintak's AI assistant. Feel free to ask me about his experience, projects! I'm hosted on a free server, so I might take a moment to get started 😊",
           sender: 'bot',
           timestamp: new Date().toLocaleTimeString()
         }
