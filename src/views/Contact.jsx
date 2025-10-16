@@ -31,10 +31,10 @@ const Contact = () => {
         <div className="flex justify-between items-center md:items-stretch  flex-col md:flex-row pb-24">
           <div className="w-full md:pr-8">
             <form>
-              <div class="my-6">
+              <div className="my-6">
                 <label
-                  for="name"
-                  class={
+                  htmlFor="name"
+                  className={
                     darkMode
                       ? "block mb-2 text-lg font-medium text-gray-900"
                       : "block mb-2 text-lg font-medium text-white"
@@ -45,15 +45,15 @@ const Contact = () => {
                 <input
                   type="email"
                   id="name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Enter your name"
                   required
                 />
               </div>
               <div className="mb-4">
                 <label
-                  for="email"
-                  class={
+                  htmlFor="email"
+                  className={
                     darkMode
                       ? "block mb-2 text-lg font-medium text-gray-900"
                       : "block mb-2 text-lg font-medium text-white"
@@ -64,15 +64,15 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Enter your email"
                   required
                 />
               </div>
               <div className="mb-4">
                 <label
-                  for="message"
-                  class={
+                  htmlFor="message"
+                  className={
                     darkMode
                       ? "block mb-2 text-lg font-medium text-gray-900"
                       : "block mb-2 text-lg font-medium text-white"
@@ -82,7 +82,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 h-28 w-full text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 h-28 w-full text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Enter your message"
                   required
                 />
@@ -125,13 +125,13 @@ const Contact = () => {
             </a>
             <h1 className="text-3xl  font-bold">Social</h1>
             <ul className="flex">
-              {contactLinks.map((el) => (
+              {contactLinks.map((el, index) => (
                 <a
+                  key={index}
                   href={el.link}
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
                 >
                   <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
                 </a>
               ))}
             </ul>

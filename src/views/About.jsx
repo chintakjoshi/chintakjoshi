@@ -55,16 +55,11 @@ const About = () => {
           <motion.div className="flex flex-wrap mt-8 flex flex-wrap justify-between ">
             {techStack.map((el, index) => (
               <motion.div
+                key={index}
                 initial="hidden"
                 whileInView={"visible"}
                 variants={{
-                  visible: {
-                    y: 0,
-                    opacity: 1,
-                    transition: {
-                      type: "spring",
-                    },
-                  },
+                  visible: { y: 0, opacity: 1, transition: { type: "spring" } },
                   hidden: { opacity: 1, y: 80 },
                 }}
                 className="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"

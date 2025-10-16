@@ -54,13 +54,13 @@ const Home = () => {
               I am currently working at United Rentals as a Full Stack Software Engineer.
             </p>
             <div className="flex md:justify-start ">
-              {contactLinks.map((el) => (
+              {contactLinks.map((el, index) => (
                 <a
+                  key={index}
                   href={el.link}
                   className="mr-5 cursor-pointer mt-8 hover:scale-125"
                 >
                   <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
                 </a>
               ))}
             </div>
