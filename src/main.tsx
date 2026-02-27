@@ -5,9 +5,12 @@ import App from './App';
 import './styles/main.css';
 import './styles/code.css';
 
+const baseUrl = import.meta.env.BASE_URL;
+const routerBase = baseUrl === '/' ? '/' : baseUrl.replace(/\/$/, '');
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={routerBase}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,

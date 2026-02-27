@@ -51,7 +51,8 @@ jobs:
             BASE_PATH="/${REPO_NAME}/"
           fi
 
-          npm run build -- --base="$BASE_PATH"
+          npm run typecheck
+          npx vite build --base="$BASE_PATH"
 
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
