@@ -1,4 +1,5 @@
 ﻿import { Layout } from '../components/Layout';
+import { assetUrl } from '../lib/assetUrl';
 
 export function AboutPage() {
   return (
@@ -15,7 +16,7 @@ export function AboutPage() {
       <div className="container">
         <div className="content">
           <div className="avatar">
-            <img src="/assets/images/chintak-about.png" width={400} height={400} alt="Chintak" />
+            <img src={assetUrl('assets/images/chintak-about.png')} width={400} height={400} alt="Chintak" />
           </div>
           <p>
             Hi, I&apos;m Chintak, a full-stack software engineer who builds things on the web and then immediately wonders
@@ -46,3 +47,4 @@ export function AboutPage() {
     </Layout>
   );
 }
+

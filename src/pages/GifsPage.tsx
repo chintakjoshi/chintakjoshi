@@ -2,6 +2,7 @@
 import { useMemo, useState } from 'react';
 import { Layout } from '../components/Layout';
 import { playGifPreview } from '../lib/gifPlayback';
+import { assetUrl } from '../lib/assetUrl';
 
 type GifItem = {
   filename: string;
@@ -48,7 +49,7 @@ export function GifsPage() {
     const img = event.currentTarget.querySelector('img');
 
     if (img instanceof HTMLImageElement) {
-      void playGifPreview(img, `/assets/images/gifs/${filename}.gif`);
+      void playGifPreview(img, assetUrl(`assets/images/gifs/${filename}.gif`));
     }
   };
 
@@ -85,14 +86,15 @@ export function GifsPage() {
           </p>
         </noscript>
         {GIF_ITEMS.map((gif) => {
-          const markdown = `![${gif.alt}](https://github.com/chintakjoshi/assets/images/gifs/${gif.filename}.gif)`;
+          const gifUrl = new URL(assetUrl(`assets/images/gifs/${gif.filename}.gif`), window.location.origin).href;
+          const markdown = `![${gif.alt}](${gifUrl})`;
           const label = copiedLabel[gif.filename] ? 'Copied!' : 'Copy markdown';
 
           return (
             <div key={gif.filename}>
               <a className="gif-preview" href="#" onClick={(event) => handlePreview(event, gif.filename)}>
                 <img
-                  src={`/assets/images/gifs/${gif.filename}.jpg`}
+                  src={assetUrl(`assets/images/gifs/${gif.filename}.jpg`)}
                   width={gif.width}
                   height={gif.height}
                   alt={gif.alt}
@@ -117,3 +119,4 @@ export function GifsPage() {
     </Layout>
   );
 }
+

@@ -1,6 +1,7 @@
 ﻿import type { MouseEvent } from 'react';
 import { Layout } from '../components/Layout';
 import { playGifPreview } from '../lib/gifPlayback';
+import { assetUrl } from '../lib/assetUrl';
 
 export function ProjectsPage() {
   const handlePreview = (event: MouseEvent<HTMLAnchorElement>) => {
@@ -8,7 +9,7 @@ export function ProjectsPage() {
     const img = event.currentTarget.querySelector('img');
 
     if (img instanceof HTMLImageElement) {
-      void playGifPreview(img, '/assets/images/projects/manuscriptly.gif');
+      void playGifPreview(img, assetUrl('assets/images/projects/manuscriptly.gif'));
     }
   };
 
@@ -36,7 +37,7 @@ export function ProjectsPage() {
         <div className="project-card">
           <a className="gif-preview" href="#" onClick={handlePreview}>
             <img
-              src="/assets/images/projects/manuscriptly.png"
+              src={assetUrl('assets/images/projects/manuscriptly.png')}
               width={400}
               height={225}
               alt="Manuscriptly project preview gif"
@@ -57,3 +58,4 @@ export function ProjectsPage() {
     </Layout>
   );
 }
+
