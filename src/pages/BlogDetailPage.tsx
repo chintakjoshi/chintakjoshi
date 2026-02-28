@@ -1,7 +1,14 @@
-﻿import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Layout } from '../components/Layout';
 
+const BLOG_PATHS = ['/blogs/case-study-2025-refresh', '/blogs/blog-questions-challenge-2025'] as const;
+
 export function BlogDetailPage() {
+  const { pathname } = useLocation();
+  const currentIndex = BLOG_PATHS.indexOf(pathname as (typeof BLOG_PATHS)[number]);
+  const previousPath = currentIndex > 0 ? BLOG_PATHS[currentIndex - 1] : null;
+  const nextPath = currentIndex >= 0 && currentIndex < BLOG_PATHS.length - 1 ? BLOG_PATHS[currentIndex + 1] : null;
+
   return (
     <Layout
       title="Case Study: lynnandtonic.com 2025 refresh | Chintak Joshi"
@@ -43,17 +50,25 @@ export function BlogDetailPage() {
           futile-but fun! The grain of this website is polyester.
         </p>
       </div>
-      <nav className="blogs-nav">
-        <div className="later" />
-        <div className="back">
-          <Link to="/blogs">All</Link>
-        </div>
-        <div className="earlier">
-          <Link className="earlier" to="/blogs/blog-questions-challenge-2025">
-            Blog Questions Challenge 2025
+      <nav className="blogs-nav" aria-label="Blog navigation">
+        {previousPath ? (
+          <Link className="blog-nav-link previous" to={previousPath} aria-label="Previous blog">
+            &larr;
           </Link>
-          <span>&rarr;</span>
-        </div>
+        ) : (
+          <span className="blog-nav-link previous is-disabled" aria-label="Previous blog unavailable">
+            &larr;
+          </span>
+        )}
+        {nextPath ? (
+          <Link className="blog-nav-link next" to={nextPath} aria-label="Next blog">
+            &rarr;
+          </Link>
+        ) : (
+          <span className="blog-nav-link next is-disabled" aria-label="Next blog unavailable">
+            &rarr;
+          </span>
+        )}
       </nav>
     </Layout>
   );

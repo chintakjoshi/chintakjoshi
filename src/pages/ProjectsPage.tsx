@@ -47,10 +47,7 @@ export function ProjectsPage() {
           <div className="links">
             <small>Manuscriptly</small>
             <small className="actions">
-              <em>click to preview project</em> |{' '}
-              <a href="https://github.com/chintakjoshi/manuscriptly" target="_blank" rel="noopener noreferrer">
-                Source code
-              </a>
+              <em>click to preview project</em>
             </small>
           </div>
         </div>
