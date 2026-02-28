@@ -42,3 +42,7 @@
 .gifs .gifs-sentinel{
   height:1px;
 }
+
+.chat .chat-shell-header > * + *{
+  margin-top:0;
+}
