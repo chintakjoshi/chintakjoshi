@@ -1,4 +1,5 @@
-﻿import { Navigate, Route, Routes } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { AboutPage } from './pages/AboutPage';
 import { BlogsPage } from './pages/BlogsPage';
 import { BlogDetailPage } from './pages/BlogDetailPage';
@@ -8,7 +9,28 @@ import { HomePage } from './pages/HomePage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 
+function useGoatCounterRouteTracking() {
+  const location = useLocation();
+  const hasMounted = useRef(false);
+
+  useEffect(() => {
+    // The script handles the initial page load; this tracks only SPA navigations.
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
+
+    const path = `${location.pathname}${location.search}${location.hash}`;
+    window.goatcounter?.count({
+      path,
+      title: document.title,
+    });
+  }, [location.pathname, location.search, location.hash]);
+}
+
 function App() {
+  useGoatCounterRouteTracking();
+
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
