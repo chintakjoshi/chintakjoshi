@@ -9,7 +9,6 @@ type Message = {
   id: number;
   sender: ChatSender;
   text: string;
-  timestamp: Date;
 };
 
 const STORAGE_TOKEN = 'chatbot_token';
@@ -29,7 +28,6 @@ async function parseJsonResponse(response: Response) {
 
 export function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([]);
-  const [status, setStatus] = useState('Connecting...');
   const [inputValue, setInputValue] = useState('');
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -58,26 +56,22 @@ export function ChatPage() {
         id: Date.now() + previous.length,
         sender,
         text,
-        timestamp: new Date(),
       },
     ]);
   };
 
   const renderWelcomeMessage = () => {
-    appendMessage('bot', "Hi! I'm Chintak's AI assistant. Ask me about projects, experience, or skills.");
+    appendMessage('bot', "Hi! I'm Chai-SSistant. Ask me about Chintak's projects, experience, or skills.");
   };
 
   useEffect(() => {
     if (!isConfigured) {
-      setStatus(
-        'Chat is not configured yet. Set REACT_APP_CHATBOT_API_URL and REACT_APP_CHATBOT_API_KEY in .env.',
-      );
+      setMessages([]);
       return;
     }
 
     setMessages([]);
     renderWelcomeMessage();
-    setStatus('Ready.');
     inputRef.current?.focus();
   }, [isConfigured]);
 
@@ -131,7 +125,6 @@ export function ChatPage() {
     setSessionId(null);
     setMessages([]);
     renderWelcomeMessage();
-    setStatus('Started a new chat.');
     inputRef.current?.focus();
   };
 
@@ -150,7 +143,6 @@ export function ChatPage() {
     appendMessage('user', userMessage);
     setInputValue('');
     setIsLoading(true);
-    setStatus('Thinking...');
 
     try {
       const token = await getValidToken();
@@ -181,12 +173,10 @@ export function ChatPage() {
       }
 
       appendMessage('bot', (data.response as string) || 'I did not receive a response message.');
-      setStatus('Ready.');
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unexpected error';
       console.error('Chat error:', error);
       appendMessage('bot', `Sorry, I could not connect right now. ${message}`);
-      setStatus('Connection issue. Try again.');
     } finally {
       setIsLoading(false);
       inputRef.current?.focus();
@@ -206,11 +196,9 @@ export function ChatPage() {
     >
       <div className="container">
         <div className="content">
-          <small className="chat-help">Ask me anything about Chintak&apos;s experience, projects, and skills.</small>
-
           <section className={`chat-shell${isLoading ? ' is-loading' : ''}`}>
             <header className="chat-shell-header">
-              <h2>AI Assistant</h2>
+              <h2>Chai-SSistant</h2>
               {isConfigured ? (
                 <button className="chat-clear" type="button" onClick={clearChat}>
                   Clear
@@ -235,16 +223,9 @@ export function ChatPage() {
                   ) : (
                     <p>{message.text}</p>
                   )}
-                  <time dateTime={message.timestamp.toISOString()}>
-                    {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-                  </time>
                 </article>
               ))}
             </div>
-
-            <p className="chat-status" role="status">
-              {status}
-            </p>
 
             {isConfigured ? (
               <form className="chat-form" onSubmit={handleSubmit}>

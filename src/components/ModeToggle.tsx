@@ -17,7 +17,10 @@ function getCSSCustomProp(propKey: string): string {
 }
 
 function applySetting(passedSetting?: ColorMode) {
-  const currentSetting = passedSetting || (localStorage.getItem(STORAGE_KEY) as ColorMode | null);
+  const currentSetting =
+    passedSetting ||
+    (localStorage.getItem(STORAGE_KEY) as ColorMode | null) ||
+    (document.documentElement.getAttribute('data-user-color-scheme') as ColorMode | null);
 
   if (currentSetting) {
     document.documentElement.setAttribute('data-user-color-scheme', currentSetting);
@@ -31,9 +34,18 @@ function toggleSetting(): ColorMode {
   let currentSetting = localStorage.getItem(STORAGE_KEY) as ColorMode | null;
 
   switch (currentSetting) {
-    case null:
-      currentSetting = getCSSCustomProp(COLOR_MODE_KEY) === 'dark' ? 'light' : 'dark';
+    case null: {
+      const activeSetting = document.documentElement.getAttribute('data-user-color-scheme') as ColorMode | null;
+      currentSetting =
+        activeSetting === 'light' || activeSetting === 'dark'
+          ? activeSetting === 'dark'
+            ? 'light'
+            : 'dark'
+          : getCSSCustomProp(COLOR_MODE_KEY) === 'dark'
+            ? 'light'
+            : 'dark';
       break;
+    }
     case 'light':
       currentSetting = 'dark';
       break;

@@ -9,8 +9,12 @@
     <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
     <link href="/assets/fonts/Hubano-Rough.woff2" rel="preload" as="font" type="font/woff2" crossorigin />
     <script type="text/javascript">
-      if (localStorage.getItem('user-color-scheme') !== null) {
-        document.documentElement.setAttribute('data-user-color-scheme', localStorage.getItem('user-color-scheme'));
+      try {
+        const savedMode = localStorage.getItem('user-color-scheme');
+        const mode = savedMode === 'light' || savedMode === 'dark' ? savedMode : 'dark';
+        document.documentElement.setAttribute('data-user-color-scheme', mode);
+      } catch (_error) {
+        document.documentElement.setAttribute('data-user-color-scheme', 'dark');
       }
     </script>
     <script
