@@ -1,5 +1,5 @@
 ﻿import type { MouseEvent } from 'react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Layout } from '../components/Layout';
 import { playGifPreview } from '../lib/gifPlayback';
 import { assetUrl } from '../lib/assetUrl';
@@ -10,6 +10,8 @@ type GifItem = {
   height: number;
   alt: string;
 };
+
+const GIF_BATCH_SIZE = 8;
 
 const GIF_ITEMS: GifItem[] = [
   { filename: 'fob-css', width: 400, height: 225, alt: 'woman throws an apple and hits a fleeing boy in the head, caption says "CSS"' },
@@ -42,7 +44,35 @@ const GIF_ITEMS: GifItem[] = [
 
 export function GifsPage() {
   const [copiedLabel, setCopiedLabel] = useState<Record<string, boolean>>({});
+  const [visibleCount, setVisibleCount] = useState(GIF_BATCH_SIZE);
+  const loadMoreRef = useRef<HTMLDivElement>(null);
   const canCopy = useMemo(() => typeof navigator !== 'undefined' && !!navigator.clipboard, []);
+  const siteUrl = (import.meta.env.VITE_SITE_URL as string | undefined)?.trim().replace(/\/+$/, '');
+  const markdownOrigin = siteUrl || window.location.origin;
+  const visibleGifs = useMemo(() => GIF_ITEMS.slice(0, visibleCount), [visibleCount]);
+  const hasMoreGifs = visibleCount < GIF_ITEMS.length;
+
+  useEffect(() => {
+    const sentinel = loadMoreRef.current;
+    if (!sentinel || !hasMoreGifs) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVisibleCount((previous) => Math.min(previous + GIF_BATCH_SIZE, GIF_ITEMS.length));
+        }
+      },
+      { rootMargin: '250px 0px' },
+    );
+
+    observer.observe(sentinel);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [hasMoreGifs]);
 
   const handlePreview = (event: MouseEvent<HTMLAnchorElement>, filename: string) => {
     event.preventDefault();
@@ -85,8 +115,8 @@ export function GifsPage() {
             <em>Enable JavaScript to preview animated gifs</em>
           </p>
         </noscript>
-        {GIF_ITEMS.map((gif) => {
-          const gifUrl = new URL(assetUrl(`assets/images/gifs/${gif.filename}.gif`), window.location.origin).href;
+        {visibleGifs.map((gif) => {
+          const gifUrl = new URL(assetUrl(`assets/images/gifs/${gif.filename}.gif`), `${markdownOrigin}/`).href;
           const markdown = `![${gif.alt}](${gifUrl})`;
           const label = copiedLabel[gif.filename] ? 'Copied!' : 'Copy markdown';
 
@@ -115,6 +145,7 @@ export function GifsPage() {
             </div>
           );
         })}
+        {hasMoreGifs ? <div ref={loadMoreRef} className="gifs-sentinel" aria-hidden="true" /> : null}
       </div>
     </Layout>
   );

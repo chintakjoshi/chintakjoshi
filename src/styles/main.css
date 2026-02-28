@@ -38,3 +38,7 @@
 .blog-detail .blog-nav-link.previous{justify-self:start}
 .blog-detail .blog-nav-link.next{justify-self:end}
 .blog-detail .blog-nav-link.is-disabled{opacity:.55;pointer-events:none;text-decoration:none}
+
+.gifs .gifs-sentinel{
+  height:1px;
+}
