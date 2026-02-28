@@ -1,6 +1,7 @@
-﻿import type { FormEvent } from 'react';
+import type { FormEvent } from 'react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Layout } from '../components/Layout';
 
 type ChatSender = 'bot' | 'user';
@@ -61,7 +62,7 @@ export function ChatPage() {
   };
 
   const renderWelcomeMessage = () => {
-    appendMessage('bot', "Hi! I'm Chai-SSistant. Ask me about Chintak's projects, experience, or skills.");
+    appendMessage('bot', "I'm HallucinAItor -- confidently wrong about Chintak since day one. Running on a free server, so give me a sec to crawl out of digital hibernation. Ask me anything. I'll make something up.");
   };
 
   useEffect(() => {
@@ -198,7 +199,7 @@ export function ChatPage() {
         <div className="content">
           <section className={`chat-shell${isLoading ? ' is-loading' : ''}`}>
             <header className="chat-shell-header">
-              <h2>Chai-SSistant</h2>
+              <h2>HallucinAItor</h2>
               {isConfigured ? (
                 <button className="chat-clear" type="button" onClick={clearChat}>
                   Clear
@@ -212,6 +213,7 @@ export function ChatPage() {
                 <article key={message.id} className={`chat-message ${message.sender}`}>
                   {message.sender === 'bot' ? (
                     <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
                       components={{
                         a: ({ node: _node, ...props }) => (
                           <a {...props} target="_blank" rel="noopener noreferrer" />
@@ -255,4 +257,5 @@ export function ChatPage() {
     </Layout>
   );
 }
+
 
