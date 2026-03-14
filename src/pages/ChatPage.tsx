@@ -14,6 +14,7 @@ type Message = {
 
 const STORAGE_TOKEN = 'chatbot_token';
 const STORAGE_TOKEN_EXPIRY = 'chatbot_token_expiry';
+const STORAGE_SESSION_ID = 'chatbot_session_id';
 const DEFAULT_CHATBOT_API_URL = '';
 const DEFAULT_CHATBOT_API_KEY = '';
 
@@ -30,7 +31,9 @@ async function parseJsonResponse(response: Response) {
 export function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
-  const [sessionId, setSessionId] = useState<string | null>(null);
+  const [sessionId, setSessionId] = useState<string | null>(() => {
+    return sessionStorage.getItem(STORAGE_SESSION_ID);
+  });
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const messagesRef = useRef<HTMLDivElement>(null);
@@ -62,11 +65,13 @@ export function ChatPage() {
   };
 
   const renderWelcomeMessage = () => {
-    appendMessage('bot', "I'm HallucinAItor -- confidently wrong about Chintak since day one. Running on a free server, so give me a sec to crawl out of digital hibernation. Ask me anything. I'll make something up.");
+    appendMessage('bot', "I'm HallucinAItor - confidently wrong about Chintak since day one. Running on a free server, so give me a sec to crawl out of digital hibernation. Ask me anything. I'll make something up.");
   };
 
   useEffect(() => {
     if (!isConfigured) {
+      setSessionId(null);
+      sessionStorage.removeItem(STORAGE_SESSION_ID);
       setMessages([]);
       return;
     }
@@ -124,6 +129,7 @@ export function ChatPage() {
     }
 
     setSessionId(null);
+    sessionStorage.removeItem(STORAGE_SESSION_ID);
     setMessages([]);
     renderWelcomeMessage();
     inputRef.current?.focus();
@@ -169,8 +175,9 @@ export function ChatPage() {
         throw new Error(data.error || `HTTP ${response.status}`);
       }
 
-      if (!sessionId && data.session_id) {
-        setSessionId(data.session_id as string);
+      if (typeof data.session_id === 'string' && data.session_id.length > 0) {
+        setSessionId(data.session_id);
+        sessionStorage.setItem(STORAGE_SESSION_ID, data.session_id);
       }
 
       appendMessage('bot', (data.response as string) || 'I did not receive a response message.');
