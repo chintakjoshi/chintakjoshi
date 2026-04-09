@@ -109,6 +109,8 @@ export async function playGifPreview(img: HTMLImageElement, gifUrl: string): Pro
     window.clearTimeout(existingTimer);
   }
 
+  img.dataset.previewState = 'playing';
+
   if (img.src !== resolvedGifUrl) {
     img.src = resolvedGifUrl;
   }
@@ -119,6 +121,7 @@ export async function playGifPreview(img: HTMLImageElement, gifUrl: string): Pro
     if (img.dataset.staticSrc) {
       img.src = img.dataset.staticSrc;
     }
+    delete img.dataset.previewState;
     gifPlaybackTimers.delete(img);
   }, durationMs * 2);
 
