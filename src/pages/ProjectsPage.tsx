@@ -65,6 +65,11 @@ const projects: Project[] = [
     image: 'assets/images/projects/collab-drawing.png',
     sourceCodeUrl: 'https://github.com/chintakjoshi/collaborative-drawing-board',
   },
+  {
+    name: 'authSDK',
+    image: 'assets/images/projects/authsdk.png',
+    sourceCodeUrl: 'https://github.com/chintakjoshi/authSDK',
+  },
 ];
 
 export function ProjectsPage() {
